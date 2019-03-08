@@ -28,10 +28,14 @@ project
 Open a command prompt/terminal to the project folder.Type the following.
 
 #### On Windows
-``` javac -cp .\src\ .\src\contact\*.java -d .\bin\ ```
+``` 
+javac -cp .\src\ .\src\contact\*.java -d .\bin\ 
+```
 
 #### On Unix(Mac/Linux)
-``` javac -cp ./src/ ./src/contact/*.java -d ./bin/ ```
+``` 
+javac -cp ./src/ ./src/contact/*.java -d ./bin/ 
+```
 This compiles your java classes and sets the classpath and stores the output in the bin folder.
 
 ## Create Manifest File
