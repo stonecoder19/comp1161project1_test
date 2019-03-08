@@ -30,8 +30,8 @@ public class ContactTest {
 	@Test
 	public void testAddAlias(){
 		Contact contact = new Contact("Jane", "Morgan", "Female", 19950316);
-		contact.setAlias("JaneySwag");
-		assertEquals(contact.getAlias(),"JaneySwag");
+		contact.setAlias("JaneyBoss");
+		assertEquals(contact.getAlias(),"JaneyBoss");
 	}
 
 	@Test
