@@ -71,12 +71,12 @@ project
 
 #### On Windows
 
-``` jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ .\libs\ ```
+``` jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ . ```
 
 #### On Unix(Linux/Mac)
-``` jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ ./libs/ ```
+``` jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . ```
 
-A jar file should have been created in the libs folder
+A jar file should have been created in the project folder
 
 
 ## Running the tests
