@@ -87,12 +87,20 @@ Copy the jar file to this folder.
 
 #### On Windows
 
-```javac -cp project.jar;junit-4.7;hamcrest-all-1.3.jar;. .\*.java ```
-```java -cp project.jar;junit-4.7;hamcrest-all-1.3.jar;. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest ```
+```
+javac -cp project.jar;junit-4.7;hamcrest-all-1.3.jar;. .\*.java 
+```
+```
+java -cp project.jar;junit-4.7;hamcrest-all-1.3.jar;. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest
+```
 
 #### Unix(Mac/Linux)
-```javac -cp project.jar:junit-4.7:hamcrest-all-1.3.jar:. ./*.java ```
-```java -cp project.jar:junit-4.7:hamcrest-all-1.3.jar:. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest ```
+```
+javac -cp project.jar:junit-4.7:hamcrest-all-1.3.jar:. ./*.java 
+```
+```
+java -cp project.jar:junit-4.7:hamcrest-all-1.3.jar:. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest
+```
 
 ## Results
 
