@@ -28,10 +28,14 @@ project
 Open a command prompt/terminal to the project folder.Type the following.
 
 #### On Windows
-``` javac -cp .\src\ .\src\contact\*.java -d .\bin\ ```
+``` 
+javac -cp .\src\ .\src\contact\*.java -d .\bin\ 
+```
 
 #### On Unix(Mac/Linux)
-``` javac -cp ./src/ ./src/contact/*.java -d ./bin/ ```
+``` 
+javac -cp ./src/ ./src/contact/*.java -d ./bin/ 
+```
 This compiles your java classes and sets the classpath and stores the output in the bin folder.
 
 ## Create Manifest File
@@ -71,12 +75,12 @@ project
 
 #### On Windows
 
-``` jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ .\libs\ ```
+``` jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ . ```
 
 #### On Unix(Linux/Mac)
-``` jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ ./libs/ ```
+``` jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . ```
 
-A jar file should have been created in the libs folder
+A jar file should have been created in the project folder
 
 
 ## Running the tests
@@ -87,12 +91,20 @@ Copy the jar file to this folder.
 
 #### On Windows
 
-```javac -cp project.jar;junit-4.7;hamcrest-all-1.3.jar;. .\*.java ```
-```java -cp project.jar;junit-4.7;hamcrest-all-1.3.jar;. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest ```
+```
+javac -cp project.jar;junit-4.7.jar;hamcrest-all-1.3.jar;. .\*.java 
+```
+```
+java -cp project.jar;junit-4.7.jar;hamcrest-all-1.3.jar;. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest
+```
 
 #### Unix(Mac/Linux)
-```javac -cp project.jar:junit-4.7:hamcrest-all-1.3.jar:. ./*.java ```
-```java -cp project.jar:junit-4.7:hamcrest-all-1.3.jar:. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest ```
+```
+javac -cp project.jar:junit-4.7.jar:hamcrest-all-1.3.jar:. ./*.java 
+```
+```
+java -cp project.jar:junit-4.7.jar:hamcrest-all-1.3.jar:. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest
+```
 
 ## Results
 
