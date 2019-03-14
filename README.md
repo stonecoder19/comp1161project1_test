@@ -82,7 +82,7 @@ A jar file called *project.jar* should have been created in the project folder
 
 Download the zip https://github.com/stonecoder19/comp1161project1_test/archive/master.zip of this project and extract it. After which open a terminal/command prompt in the extracted folder.
 
-Copy the project.jar file to this folder.
+Copy the **project.jar** file to this folder.
 
 The folder structure should like this
 ```
