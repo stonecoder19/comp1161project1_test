@@ -85,7 +85,7 @@ A jar file should have been created in the project folder
 
 ## Running the tests
 
-Download the zip of this project and extract it. After which open a terminal/command prompt in the extracted folder.
+Download the zip https://github.com/stonecoder19/comp1161project1_test/archive/master.zip of this project and extract it. After which open a terminal/command prompt in the extracted folder.
 
 Copy the jar file to this folder.
 
