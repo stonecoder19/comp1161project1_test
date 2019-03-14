@@ -7,9 +7,6 @@ Your project structure should look something like this.
 
 ```
 project
-|
-|____libs
-|
 |_____bin
 │
 |_____docs
@@ -25,7 +22,7 @@ project
 ```
 
 ## Compiling files
-Open a command prompt/terminal to the project folder.Type the following.
+Open a command prompt/terminal to the project folder.Type the following. N.B (If you want to open a command prompt to the folder just open a command prompt then type ```cd <path_to_the_project_folder```
 
 #### On Windows
 ``` 
@@ -51,9 +48,6 @@ Your folder structure should now look like this.
 
 ```
 project
-|
-|_____libs
-|
 |____resources
      | MANIFEST.FM
 |
