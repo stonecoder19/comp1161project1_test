@@ -37,7 +37,7 @@ javac -cp ./src/ ./src/contact/*.java -d ./bin/
 This compiles your java classes and sets the classpath and stores the output in the bin folder.
 
 ## Create Manifest File
-Create a folder called resources inside your project folder and inside that create a file called MANIFEST.FM
+Create a folder called **resources** inside your project folder and inside that create a file called **MANIFEST.FM**  (**In your code editor you can create a new file but be sure to select no extension**)
 
 In that file place the following
 ```
@@ -59,7 +59,7 @@ project
 |______src
     │
     |_______contact
-            | Adress.java
+            | Address.java
             | Contact.java
             | Person.java
             | Name.java
@@ -75,14 +75,28 @@ project
 #### On Unix(Linux/Mac)
 ``` jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . ```
 
-A jar file should have been created in the project folder
+A jar file called *project.jar* should have been created in the project folder
 
 
 ## Running the tests
 
 Download the zip https://github.com/stonecoder19/comp1161project1_test/archive/master.zip of this project and extract it. After which open a terminal/command prompt in the extracted folder.
 
-Copy the jar file to this folder.
+Copy the project.jar file to this folder.
+
+The folder structure should like this
+```
+comp1161project_test
+|____
+     | AddressTest.java
+     | ContactTest.java
+     | PersonTest.java
+     | NameTesT.java
+     | PhoneTest.java
+     | junit-4.7.jar
+     | hamcrest-all-1.3.jar
+     | project.jar
+```
 
 #### On Windows
 
