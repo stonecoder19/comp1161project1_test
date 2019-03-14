@@ -22,8 +22,9 @@ project
 ```
 
 ## Compiling files
-Open a command prompt/terminal to the project folder.Type the following. N.B (If you want to open a command prompt to the folder just open a command prompt then type ```cd <path_to_the_project_folder>```
+Open a command prompt/terminal to the project folder.N.B (If you want to open a command prompt to the folder just open a command prompt then type ```cd <path_to_the_project_folder>```)
 
+Now yype the following. 
 #### On Windows
 ``` 
 javac -cp .\src\ .\src\contact\*.java -d .\bin\ 
