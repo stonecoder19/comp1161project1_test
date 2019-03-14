@@ -100,4 +100,11 @@ public class ContactTest {
 					new String[]{"(673) 934-4401"}));
 
 	}
+
+
+	@Test
+	public void testAge() {
+		Contact contact = new Contact("Elvis", "Presley", "Male", 19950216)
+		assertEquals(contact.getAge(), 24)
+	}
 }
