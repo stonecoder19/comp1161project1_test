@@ -104,7 +104,7 @@ public class ContactTest {
 
 	@Test
 	public void testAge() {
-		Contact contact = new Contact("Elvis", "Presley", "Male", 19950216)
-		assertEquals(contact.getAge(), 24)
+		Contact contact = new Contact("Elvis", "Presley", "Male", 19950216);
+		assertEquals(contact.getAge(), 24);
 	}
 }
