@@ -3,7 +3,7 @@
 
 First thing is first let us create a jar file for your project.
 
-Your project structure should look something like this.
+Your project structure should look something like this. **Before you begin MAKE SURE all your .java files have the line ```package contact;``` at the top**
 
 ```
 project
