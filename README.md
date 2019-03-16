@@ -69,6 +69,7 @@ project
 ```
 
 ## Create JAR File
+***Note if you use eclipse or any other ide such as intellij you can export the project as a jar file. Just make sure to name it project.jar and you can skip this step.***
 
 #### On Windows
 
@@ -131,5 +132,14 @@ Time: 0.071
 
 OK (22 tests)
 ```
+
+## Possible Errors
+- If you have an error regarding Gender, make sure the make a seperate file called Gender.java and in that file put the enum e.g 
+```java 
+    public enum Gender{
+        MALE, FEMALE
+    }
+```
+
 
 
