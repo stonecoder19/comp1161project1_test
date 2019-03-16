@@ -10,28 +10,29 @@ public class ContactTest {
 	@Test
 	public void testGetName() {
 		Contact contact = new Contact("Matthew", "Stone", "Male", 19950316);
-		assertEquals(contact.getName(), "Stone,Matthew");
+		assertEquals("Stone,Matthew", contact.getName());
 	}
 
 	@Test
 	public void testUpdateName() {
 		Contact contact = new Contact("Jane", "Morgan", "Male", 19950316);
 		contact.updateName("Stone");
-		assertEquals(contact.getName(), "Stone,Jane");
+		assertEquals("Stone,Jane", contact.getName());
 	}
 
 	@Test
 	public void testAddress(){
 		Contact contact = new Contact("Jane", "Morgan", "Female", 19950316);
 		contact.setAddress("107 Jane Ave;Portmore;;;Jamaica");
-		assertTrue(Arrays.equals(contact.getAddress(), new String[]{"107 Jane Ave","Portmore","Jamaica"}));
+		assertTrue(Arrays.equals(new String[]{"107 Jane Ave","Portmore","Jamaica"},
+					contact.getAddress()));
 	}
 
 	@Test
 	public void testAddAlias(){
 		Contact contact = new Contact("Jane", "Morgan", "Female", 19950316);
 		contact.setAlias("JaneyBoss");
-		assertEquals(contact.getAlias(),"JaneyBoss");
+		assertEquals("JaneyBoss", contact.getAlias());
 	}
 
 	@Test
@@ -40,7 +41,7 @@ public class ContactTest {
 		contact.setAlias("JaneySwag");
 		Contact contact2 = new Contact("Jack", "Morgan", "Female", 19950316);
 		contact2.setAlias("JaneySwag");
-		assertEquals(contact2.getAlias(),null);
+		assertEquals(null, contact2.getAlias());
 	}
 
 	@Test
@@ -48,8 +49,8 @@ public class ContactTest {
 		Contact contact = new Contact("Jack", "Morgan", "Male", 19950316);
 		contact.addEmail("jacktheman@gmail.com");
 		contact.addEmail("jackthebiggerman@gmail.com");
-		assertTrue(Arrays.equals(contact.getEmailList(), 
-					new String[]{"jacktheman@gmail.com", "jackthebiggerman@gmail.com"}));
+		assertTrue(Arrays.equals(new String[]{"jacktheman@gmail.com", "jackthebiggerman@gmail.com"},
+			contact.getEmailList()));
 
 	}
 
@@ -60,8 +61,8 @@ public class ContactTest {
 		contact.addEmail("jackthebiggerman@gmail.com");
 		contact.addEmail("jackthewasteman@gmail.com");
 		contact.deleteEmail("jacktheman@gmail.com");
-		assertTrue(Arrays.equals(contact.getEmailList(), 
-					new String[]{"jackthebiggerman@gmail.com","jackthewasteman@gmail.com"}));
+		assertTrue(Arrays.equals(new String[]{"jackthebiggerman@gmail.com","jackthewasteman@gmail.com"},
+				contact.getEmailList()));
 
 	} 
 
@@ -70,8 +71,8 @@ public class ContactTest {
 		Contact contact = new Contact("John", "Daley", "Male", 19950316);
 		contact.addPhone('H', 8769081130L);
 		contact.addPhone('H',6739344401L);
-		assertTrue(Arrays.equals(contact.getPhoneList(), 
-					new String[]{"(876) 908-1130","(673) 934-4401"}));
+		assertTrue(Arrays.equals(new String[]{"(876) 908-1130","(673) 934-4401"},
+					contact.getPhoneList()));
 
 	}
 
@@ -84,9 +85,9 @@ public class ContactTest {
 		contact.addPhone('H',6569344401L);
 		contact.addPhone('H',9199344401L);
 		contact.addPhone('H',2769344401L);
-		assertTrue(Arrays.equals(contact.getPhoneList(), 
-					new String[]{"(876) 908-1130","(673) 934-4401", 
-					"(818) 934-4401", "(656) 934-4401", "(919) 934-4401"}));
+		assertTrue(Arrays.equals(new String[]{"(876) 908-1130","(673) 934-4401", 
+					"(818) 934-4401", "(656) 934-4401", "(919) 934-4401"},
+					contact.getPhoneList()));
 	}
 
 
@@ -96,8 +97,8 @@ public class ContactTest {
 		contact.addPhone('M',8769081130L);
 		contact.addPhone('H',6739344401L);
 		contact.deletePhone(8769081130L);
-		assertTrue(Arrays.equals(contact.getPhoneList(), 
-					new String[]{"(673) 934-4401"}));
+		assertTrue(Arrays.equals(new String[]{"(673) 934-4401"},
+			contact.getPhoneList()));
 
 	}
 

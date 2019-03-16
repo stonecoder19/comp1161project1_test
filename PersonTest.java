@@ -20,14 +20,14 @@ public class PersonTest {
 	@Test 
 	public void testGender() {
 		Person person = new Person("Jack", "Hall", "Female",19930415);
-		assertEquals(person.getGender(), Gender.FEMALE);
+		assertEquals(Gender.FEMALE, person.getGender());
 	}
 
 	@Test
 	public void testChangeLastName() {
 		Person person = new Person("Jane", "Doe", "Male", 19930316);
 		person.changeLastName("Doey");
-		assertEquals(person.getName(), "Jane Doey");
+		assertEquals("Jane Doey", person.getName());
 	}
 
 

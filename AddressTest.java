@@ -13,8 +13,8 @@ public class AddressTest {
 	@Test
 	public void testAddress() {
 		Address address = new Address("Spanish Town;107 Drysdale;;;Jamaica");
-		assertTrue(Arrays.equals(address.getAddress(), 
-					new String[] {"Spanish Town", "107 Drysdale","Jamaica"}));
+		assertTrue(Arrays.equals(new String[] {"Spanish Town", "107 Drysdale","Jamaica"},
+			address.getAddress()));
 	}
 
 	// @Test

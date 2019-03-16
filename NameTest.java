@@ -9,15 +9,15 @@ public class NameTest {
 	@Test
 	public void testName() {
 		Name name = new Name("John", "Brown");
-		assertEquals(name.getFirstName(), "John");
-		assertEquals(name.getLastName(), "Brown");
+		assertEquals("John", name.getFirstName());
+		assertEquals("Brown", name.getLastName());
 	}
 
 	@Test
 	public void testChangeLastName() {
 		Name name = new Name("Jenny", "Chang");
 		name.changeLastName("Zuckerberg");
-		assertEquals(name.getLastName(), "Zuckerberg");
+		assertEquals("Zuckerberg", name.getLastName());
 	}
 
 
