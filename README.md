@@ -72,10 +72,14 @@ project
 
 #### On Windows
 
-``` jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ . ```
+``` 
+jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ . 
+```
 
 #### On Unix(Linux/Mac)
-``` jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . ```
+``` 
+jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . 
+```
 
 A jar file called *project.jar* should have been created in the project folder
 
