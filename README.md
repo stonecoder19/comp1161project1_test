@@ -3,7 +3,7 @@
 
 First thing is first let us create a jar file for your project.
 
-Your project structure should look something like this.
+Your project structure should look something like this. **Before you begin MAKE SURE all your .java files have the line ```package contact;``` at the top**
 
 ```
 project
@@ -17,6 +17,7 @@ project
             | Adress.java
             | Contact.java
             | Person.java
+            | Gender.java
             | Name.java
             | Phone.java
 ```
@@ -62,18 +63,24 @@ project
             | Address.java
             | Contact.java
             | Person.java
+            | Gender.java
             | Name.java
             | Phone.java
 ```
 
 ## Create JAR File
+***Note if you use eclipse or any other ide such as intellij you can export the project as a jar file. Just make sure to name it project.jar and you can skip this step.***
 
 #### On Windows
 
-``` jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ . ```
+``` 
+jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ . 
+```
 
 #### On Unix(Linux/Mac)
-``` jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . ```
+``` 
+jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . 
+```
 
 A jar file called *project.jar* should have been created in the project folder
 
@@ -125,5 +132,14 @@ Time: 0.071
 
 OK (22 tests)
 ```
+
+## Possible Errors
+- If you have an error regarding Gender, make sure the make a seperate file called Gender.java and in that file put the enum e.g 
+```java 
+    public enum Gender{
+        MALE, FEMALE
+    }
+```
+
 
 
