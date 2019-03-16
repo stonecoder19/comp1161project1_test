@@ -17,6 +17,7 @@ project
             | Adress.java
             | Contact.java
             | Person.java
+            | Gender.java
             | Name.java
             | Phone.java
 ```
@@ -62,6 +63,7 @@ project
             | Address.java
             | Contact.java
             | Person.java
+            | Gender.java
             | Name.java
             | Phone.java
 ```
