@@ -143,6 +143,16 @@ OK (22 tests)
 - Make sure the getAddress and the getPhoneList returns a String[]
 - Make sure the toString of the Phone is formatted properly eg. (876) 555-5555
 
+## Javadoc Instructions
+### Windows
+``` 
+javadoc -d .\docs .\src\contact\*.java
+```
+### Unix (Mac\Linux)
+```
+javadoc -d ./docs ./src/contact/*.java
+```
+
 ## Submission Instructions
 
 - Now it is time to submit, make sure you copy your jar file to your project folder. Rename your project folder your id number.Folder structure should look something like this for a person with id number 6200000.
