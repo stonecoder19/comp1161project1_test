@@ -140,6 +140,28 @@ OK (22 tests)
         MALE, FEMALE
     }
 ```
+- Make sure the getAddress and the getPhoneList returns a String[]
+- Make sure the toString of the Phone is formatted properly eg. (876) 555-5555
+
+## Submission Instructions
+
+- Now it is time to submit, make sure you copy your jar file to your project folder. Rename your project folder your id number.Folder structure should look something like this for a person with id number 6200000.
+
+```
+6200000
+|
+|_______bin
+|
+|_______src
+|
+|_______docs
+| 
+| project.jar
+```
+- After you have done this zip this folder and name this zip file your id number e.g. 6200000.zip
+- Upload
+
+
 
 
 
