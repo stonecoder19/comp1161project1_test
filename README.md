@@ -9,7 +9,7 @@ Your project structure should look something like this.
 MAKE SURE that your "Project Folder" has these follwing folders: **src**, **bin**, **docs** and **resources**. 
 Your "Project Folder" should resemble the diagram below.
 
-## NOTE: Your project folder doesn't need to be called "project" as shown in the example below.
+### NOTE: Your project folder doesn't need to be called "project" as shown in the example below.
 
 ```
 project
@@ -30,9 +30,9 @@ project
             | Phone.java
 ```
 
-# Step 2 - ## Compiling your .java files.
+# Step 2 -  Compiling your .java files.
 Open a command prompt/terminal to your project folder.
-## NOTE: If you want to open a command prompt to the folder just open a command prompt then type:
+### NOTE: If you want to open a command prompt to the folder just open a command prompt then type:
 ```
 cd <path_to_the_project_folder>
 ```
@@ -49,12 +49,12 @@ javac -cp .\src\ .\src\contact\*.java -d .\bin\
 javac -cp ./src/ ./src/contact/*.java -d ./bin/ 
 ```
 
-## NOTE: This compiles your java classes and sets the classpath and stores the output in the bin folder.
+### NOTE: This compiles your java classes and sets the classpath and stores the output in the bin folder.
 
 # Step 3 - Create the Manifest File.
 Create a folder called **resources** (if you have not done so already) inside your project folder. 
 Now inside the **resources** folder, create a file called **MANIFEST.FM**  
-## NOTE: **In your code editor you can create a new file but be sure to select "no extension" when saving the file. When saving the file, select the option "Save as type" (below "File name"). and search for "no extension".**
+### NOTE: **In your code editor you can create a new file but be sure to select "no extension" when saving the file. When saving the file, select the option "Save as type" (below "File name"). and search for "no extension".**
 
 In that file place the following.
 ```
@@ -68,9 +68,16 @@ Your new folder structure should now look like this.
 ```
 project
 |____resources
-     | MANIFEST.FM
+|     |___ MANIFEST.FM
 |
 |_______bin
+|       |_____contact
+|             |____Contact.class
+|             |____Address.class
+|             |____Phone.class
+|             |____Name.class
+|             |____Person.class
+|             |____Gender.class
 │
 |_____docs
 |
@@ -87,7 +94,7 @@ project
 
 # Step 4 - Creating a JAR File.
 
-## NOTE: if you use eclipse or any other ide such as intellij you can export the project as a jar file. Just make sure to name it project.jar and you can skip this step.
+### NOTE: if you use eclipse or any other ide such as intellij you can export the project as a jar file. Just make sure to name it project.jar and you can skip this step.
 
 Now type the following in the Command Prompt.
 
@@ -101,12 +108,12 @@ jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ .
 jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . 
 ```
 
-## NOTE: A jar file will be called *project.jar* and it should have been created in your project folder.
+### NOTE: A jar file will be called *project.jar* and it should have been created in your project folder.
 
 # Step 5 - Running the tests
 
 First, Download the zip https://github.com/stonecoder19/comp1161project1_test/archive/master.zip of this project and extract it. 
-## NOTE: After downloading, open a terminal/command prompt in the extracted folder. (If you want to open a command prompt to the folder just open a command prompt then type:
+### NOTE: After downloading, open a terminal/command prompt in the extracted folder. (If you want to open a command prompt to the folder just open a command prompt then type:
 ```
 cd <path_to_the_project_tester_folder>
 ```
@@ -146,8 +153,7 @@ javac -cp project.jar:junit-4.7.jar:hamcrest-all-1.3.jar:. ./*.java
 java -cp project.jar:junit-4.7.jar:hamcrest-all-1.3.jar:. org.junit.runner.JUnitCore AddressTest ContactTest NameTest PhoneTest PersonTest
 ```
 
-# Step 6 - 
-## Results.
+# Step 6 - Results.
 
 If you passed all the tests then you should see something similar below, if not then your solution is incorrect. Correct it and repeat all the steps.
 
@@ -158,7 +164,7 @@ Time: 0.071
 
 OK (22 tests)
 ```
-# HELP - 
+# HELP 
 
 ## Possible Errors:
 - If you have an error regarding Gender, make sure the make a seperate file called Gender.java and in that file put the enum e.g 
@@ -241,7 +247,7 @@ project
 ## Submission Instructions
 
 Now it is time to submit, make sure you copy your jar file to your project folder. 
-Rename your project folder your id number.
+***Rename your project folder to your id number***.
 Folder structure should look something like this for a person with id number 6200000.
 
 ```
