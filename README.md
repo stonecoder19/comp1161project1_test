@@ -2,8 +2,7 @@
 
 In order to make the JAR (Java Archive) File, follow the steps below:
 
-# Step 1 - 
-## Your Folder Structure
+# Step 1 - Your Folder Structure
 Your project structure should look something like this. 
 **Before you begin, MAKE SURE all your .java files have the line ```package contact;``` at the top**
 
@@ -31,11 +30,12 @@ project
             | Phone.java
 ```
 
-# Step 2 - 
-## Compiling your .java files.
+# Step 2 - ## Compiling your .java files.
 Open a command prompt/terminal to your project folder.
-## N.B (If you want to open a command prompt to the folder just open a command prompt then type:
-     ```cd <path_to_the_project_folder>```
+## NOTE: If you want to open a command prompt to the folder just open a command prompt then type:
+```
+cd <path_to_the_project_folder>
+```
      
 
 Now type the following in the Command Prompt. 
@@ -51,8 +51,7 @@ javac -cp ./src/ ./src/contact/*.java -d ./bin/
 
 ## NOTE: This compiles your java classes and sets the classpath and stores the output in the bin folder.
 
-# Step 3 - 
-## Create the Manifest File.
+# Step 3 - Create the Manifest File.
 Create a folder called **resources** (if you have not done so already) inside your project folder. 
 Now inside the **resources** folder, create a file called **MANIFEST.FM**  
 ## NOTE: **In your code editor you can create a new file but be sure to select "no extension" when saving the file. When saving the file, select the option "Save as type" (below "File name"). and search for "no extension".**
@@ -86,8 +85,7 @@ project
             | Phone.java
 ```
 
-# Step 4 - 
-## Creating a JAR File.
+# Step 4 - Creating a JAR File.
 
 ## NOTE: if you use eclipse or any other ide such as intellij you can export the project as a jar file. Just make sure to name it project.jar and you can skip this step.
 
@@ -105,12 +103,13 @@ jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ .
 
 ## NOTE: A jar file will be called *project.jar* and it should have been created in your project folder.
 
-# Step 5 - 
-## Running the tests
+# Step 5 - Running the tests
 
 First, Download the zip https://github.com/stonecoder19/comp1161project1_test/archive/master.zip of this project and extract it. 
 ## NOTE: After downloading, open a terminal/command prompt in the extracted folder. (If you want to open a command prompt to the folder just open a command prompt then type:
-     ```cd <path_to_the_project_tester_folder>```
+```
+cd <path_to_the_project_tester_folder>
+```
 
 Secondly, In your project folder, locate the **project.jar** file and copy it to the project tester folder that you just downloaded.
 
@@ -185,8 +184,10 @@ Your code should include Java Documentation. This can be done by adding this to 
 ``` 
 To make a javadoc of your code.
 Open a command prompt/terminal to your project folder.
-## N.B (If you want to open a command prompt to the folder just open a command prompt then type:
-     ```cd <path_to_the_project_folder>```
+## N.B (If you want to open a command prompt to the folder just open a command prompt then type: 
+```
+cd <path_to_the_project_folder>
+```
      
 Type the following in the Command Prompt.
 ### Windows
@@ -198,7 +199,45 @@ javadoc -d .\docs .\src\contact\*.java
 javadoc -d ./docs ./src/contact/*.java
 ```
 
-
+After running the javadoc command.
+Your new folder structure should now look like this.
+```
+project
+|____resources
+     |______MANIFEST.FM
+|
+|_______bin
+|     |____contact
+|          |____Contact.class
+|          |____Address.class
+|          |____Name.class
+|          |____Person.class
+|          |____Phone.class
+│
+|_____docs
+|     |_____contact
+|     |     |_____ Contact.html
+|     |     |_____ Gender.html
+|     |     |_____ Name.html
+|     |     |_____ Person.html
+|     |     |_____ Phone.html
+|     |     |_____ Address.html
+|     |   
+|     |_____stylesheet
+|     |_____script
+|     |_____package-list
+|     |_____etc.
+|
+|______src
+    │
+    |_______contact
+            |____Address.java
+            |____Contact.java
+            |____Person.java
+            |____Gender.java
+            |____Name.java
+            |____Phone.java
+```
 ## Submission Instructions
 
 Now it is time to submit, make sure you copy your jar file to your project folder. 
@@ -214,7 +253,7 @@ Folder structure should look something like this for a person with id number 620
 |
 |_______docs
 | 
-| project.jar
+|_______project.jar
 ```
 - After you have done this zip this folder and name this zip file your id number e.g. 6200000.zip
 - Upload
