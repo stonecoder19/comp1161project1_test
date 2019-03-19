@@ -190,7 +190,7 @@ Your code should include Java Documentation. This can be done by adding this to 
 ``` 
 To make a javadoc of your code.
 Open a command prompt/terminal to your project folder.
-## N.B (If you want to open a command prompt to the folder just open a command prompt then type: 
+### N.B (You can do the following with a ide such as intellij and eclipse: 
 ```
 cd <path_to_the_project_folder>
 ```
