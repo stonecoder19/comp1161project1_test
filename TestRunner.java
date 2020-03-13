@@ -8,8 +8,8 @@ public class TestRunner {
       int score = 0;
       try{
 
-      Result result = JUnitCore.runClasses(PersonTest.class,NameTest.class,
-                  ContactTest.class,PersonTest.class,PhoneTest.class);
+      Result result = JUnitCore.runClasses(CitizenTest.class,NameTest.class,
+                  AddressTest.class,NameTest.class);
       int failureCount=0;		
       for (Failure failure : result.getFailures()) {
          failureCount += 1;

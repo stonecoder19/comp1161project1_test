@@ -1,25 +1,19 @@
 import java.util.Arrays;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import contact.*;
+import snid.*;
 
 public class AddressTest {
 	@Test
 	public void testCountry() {
-		Address address = new Address("Spanish Town;;;;Jamaica");
+		Address address = new Address("Spanish Town|John||Jamaica");
 		assertEquals("Jamaica", address.getCountry());
 	}
 
 	@Test
-	public void testAddress() {
-		Address address = new Address("Spanish Town;107 Drysdale;;;Jamaica");
-		assertTrue(Arrays.equals(new String[] {"Spanish Town", "107 Drysdale","Jamaica"},
-			address.getAddress()));
+	public void testToString() {
+		Address address = new Address("Spanish Town|107 Drysdale|Jamaica");
+		assertEquals(address.toString(), "Spanish Town\n107 Drysdale\nJamaica");
 	}
 
-	// @Test
-	// public void testToString() {
-	// 	Address address = new Address("Spanish Town;107 Drysdale;;;Jamaica");
-	// 	assertEquals(address.toString(), "\nSpanish Town\n107 Drysdale\nJamaica");
-	// }
 }
