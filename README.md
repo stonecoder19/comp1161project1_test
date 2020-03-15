@@ -115,8 +115,6 @@ project
 
 # Step 3 - Creating a JAR File.
 
-### NOTE: if you use eclipse or any other ide such as intellij you can export the project as a jar file. Just make sure to name it snid.jar and you can skip this step.
-
 Now type the following in the Command Prompt.
 
 #### On Windows
