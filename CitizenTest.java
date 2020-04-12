@@ -53,7 +53,7 @@ public class CitizenTest {
 	public void testId() {
 		Citizen citi = new Citizen('M', 1995, "Mat", "Mark", "Luke");
 		Citizen citi2 = new Citizen('F', 1995, "Jane", "Mark", "Luke");
-		assertEquals(false, citi.equals(citi2));
+		assertEquals(false, citi.getId().equals(citi2.getId()));
 	}
 
 	@Test
