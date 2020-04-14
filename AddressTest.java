@@ -12,7 +12,7 @@ public class AddressTest {
 
 	@Test
 	public void testToString() {
-		Address address = new Address("Spanish Town|107 Drysdale|Jamaica");
+		Address address = new Address("Spanish Town|107 Drysdale||Jamaica");
 		assertEquals(address.toString(), "Spanish Town\n107 Drysdale\nJamaica");
 	}
 
