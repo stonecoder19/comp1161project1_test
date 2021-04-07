@@ -54,12 +54,20 @@ javac -cp ./src/ ./src/contact/*.java -d ./bin/
 # Step 3 - Create the Manifest File.
 Create a folder called **resources** (if you have not done so already) inside your project folder. 
 Now inside the **resources** folder, create a file called **MANIFEST.FM**  
-### NOTE: **In your code editor you can create a new file but be sure to select "no extension" when saving the file. When saving the file, select the option "Save as type" (below "File name"). and search for "no extension".**
+### NOTE: **In your code editor you can create a new file but be sure to select "no extension" when saving the file. When saving the file, select the option "Save as type" (below "File name"). and search for "no extension". Also ensure you leave a blank line**
 
 In that file place the following.
 ```
 Manifest-Version: 1.0
 Class-Path: .
+
+```
+
+If you have a class that has a main method then your place the following in the file instead. For example if my main class was Main.java
+```
+Manifest-Version: 1.0
+Class-Path: .
+Main-Class: contact.Main
 
 ```
 
