@@ -63,7 +63,7 @@ Class-Path: .
 
 ```
 
-If you have a class that has a main method then your place the following in the file instead. For example if my main class was Main.java
+If you have a class that has a main method then you place the following in the file instead. For example if my main class was Main.java
 ```
 Manifest-Version: 1.0
 Class-Path: .
@@ -108,12 +108,17 @@ Now type the following in the Command Prompt.
 
 #### On Windows
 ``` 
-jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ . 
+jar cvfm project.jar .\resources\MANIFEST.FM -C .\bin\ . src docs
 ```
 
 #### On Unix(Linux/Mac)
 ``` 
-jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . 
+jar cvfm project.jar ./resources/MANIFEST.FM -C ./bin/ . src docs
+```
+
+# Step 4.5 - Executing a JAR (If Jar has Main class)
+``` 
+java -jar project.jar
 ```
 
 ### NOTE: A jar file will be called *project.jar* and it should have been created in your project folder.
